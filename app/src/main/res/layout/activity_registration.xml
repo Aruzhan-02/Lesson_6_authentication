@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:scrollbars="vertical"
+        android:background="@drawable/new_year"
+        android:backgroundTintMode="src_atop"
+        android:backgroundTint="#80000000">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            app:srcCompat="@drawable/title" />
+
+        <TextView
+            android:id="@+id/logoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/nunitp"
+            android:gravity="center"
+            android:text="Registration form"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:layout_marginBottom="20dp"/>
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginRight="30dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="10dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Gender: "
+               android:textSize="20dp"
+               android:textColor="@color/white"/>
+
+           <RadioButton
+               android:id="@+id/maleRadio"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Male(Ul)"
+               android:textColor="@color/white"
+               android:textSize="18dp"
+               android:layout_marginRight="30dp"/>
+
+           <RadioButton
+               android:id="@+id/femaleRadio"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female(Qyz)"
+               android:textColor="@color/white"
+               android:textSize="18dp"/>
+
+       </RadioGroup>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/login_fullname"
+            android:layout_width="match_parent"
+            android:transitionName="input_password"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Аты-жөніңіз"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPersonName|textNoSuggestions"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:transitionName="input_password"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Электронды поштаңыз"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:includeFontPadding="false"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/login_phone"
+            android:layout_width="match_parent"
+            android:transitionName="input_password"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Телефон нөмеріңіз"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_phone"
+            app:startIconTint="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number|textNoSuggestions"
+                android:includeFontPadding="false"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:transitionName="input_password"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Құпиясөз"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPassword|textNoSuggestions"
+                android:includeFontPadding="false"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/jataTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jataqhanada jatasyz ba?"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <CheckBox
+                android:id="@+id/yesCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Iya, jatamyn"
+                android:textSize="18dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <CheckBox
+                android:id="@+id/noCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Joq, jatpaimyn"
+                android:textSize="18dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mamandyqTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mamandygynyzdy tandanyz: "
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+        
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/spinner"
+            />
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ТІРКЕЛУ"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/nunitp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="#561D25"
+            />
+
+        <Button
+            android:id="@+id/log_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="КІРУ"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/nunitp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="#561D25"
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
